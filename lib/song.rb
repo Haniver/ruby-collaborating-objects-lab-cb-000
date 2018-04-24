@@ -4,7 +4,7 @@ class Song
   def initialize(song_name)
     @name = song_name
   end
-  def self.new_by_filename(list_of_songs)
+  def self.add_songs_from_list(list_of_songs)
     list_of_songs.each do |song|
       song_array = song.split(' - ')
       new_song = Song.new(song_array[0])
