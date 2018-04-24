@@ -9,7 +9,7 @@ class Song
       self.new_by_filename(song)
     end
   end
-  def self.new_by_filename(filename)
+  def self.new_by_filename(song)
     song_array = song.split(' - ')
     new_song = Song.new(song_array[0])
     #binding.pry
