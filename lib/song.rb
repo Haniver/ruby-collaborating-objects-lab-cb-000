@@ -17,6 +17,7 @@ class Song
     new_song.name = song_array[1]
     new_song.genre = song_array[2]
     new_song.artist.add_song(new_song)
+    new_song
   end
   def artist_name=(artist_name)
 
