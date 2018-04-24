@@ -11,6 +11,6 @@ class MP3Importer
   end
   def import
     #binding.pry
-    Song.new_by_filename(self.files)
+    Song.add_songs_from_list(self.files)
   end
 end
